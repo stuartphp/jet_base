@@ -1,6 +1,6 @@
 <div class="mt-8">
-    <div class="text-2xl">
-        <div>Companies</div> 
+    <div class="text-1xl">
+        <div>Companies</div>
     </div>
 
     <div class="mt-6">

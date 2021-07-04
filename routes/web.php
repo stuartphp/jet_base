@@ -27,6 +27,8 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/categories', function () { return view('products.categories');})->name('products.categories');
         Route::get('/units', function () { return view('products.units');})->name('products.units');
     });
-
+ Route::prefix('customers')->group(function () {
+    Route::get('/', [App\Http\Controllers\Admin\CustomersController::class, 'index'])->name('customers.list');
+ });
 });
 require __DIR__.'/auth.php';

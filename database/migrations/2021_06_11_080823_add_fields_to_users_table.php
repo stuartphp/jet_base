@@ -14,9 +14,9 @@ class AddFieldsToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('mobile_number')->after('password');
-            $table->date('date_of_birth')->nullable()->after('password');
-            $table->boolean('gender')->nullable()->after('password');
+            $table->string('mobile_number')->after('password')->nullable();
+            $table->date('date_of_birth')->nullable()->after('password')->nullable();
+            $table->boolean('gender')->nullable()->after('password')->nullable();
         });
     }
 
